@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buscar Ubicaciones</title> 
+	<link rel="shortcut icon"href="img/ubicaciones.png">
+</head>
+<body>
+	<header class="encabezado pt-2 text-center">
+		<h1 class="display-3 text-white ">Registro de Ubicaciones</h1>
+	</header>
+
+		<div class="container-fluid">
+			<div class=" row justify-content-center mt-5">
+				<div class="col-5 bg-light rounded border border-dark p-4 text-center p-2" style="box-shadow: 3px 3px 6px black;">
+					<div>
+						<div class="row mb-1">
+							<div class="col-8 text-start">
+								<label for="inputEmail4">Usuario</label>
+								<input type="text" class="form-control" placeholder="" id="usuario">
+							</div>
+							<div class="col-4 mt-4">
+								<input type="button" id="enviar" class="w-100 btn btn-outline-success" value="Mostrar Ubicaciones" onclick="valorId()">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" row justify-content-center mt-2">
+				<div class="col-10 bg-light rounded border border-dark p-4 text-center p-2" style="box-shadow: 3px 3px 6px black;">
+					<div class="container mt-2  p3 mb-5  rounded">
+						<table class="table table-bordered table-striped">
+							<thead class="table-danger">
+								<tr>
+									<th>USUARIO</th>
+									<th>LATITUD</th>
+									<th>LONGITUD</th>
+								</tr>
+							</thead>
+							<tbody id="registros"></tbody>
+						</table>
+					</div> 
+				</div>					
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="b-example-divider"></div>
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+				<div class="col-md-4 d-flex align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+					<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+					</a>
+					<a href="index.html"><input class="btn btn-outline-danger" type="button" value=" regresar" ></a>
+					<span class=" ms-3 text-muted">&copy; 2022 Joel Paiz | Applicacion de prueba.</span>
+				</div>
+			</footer>
+        </div>
+	<script src="src/controladorRegistros.js"></script>
+</body>
+</html>

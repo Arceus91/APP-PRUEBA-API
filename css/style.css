@@ -1,0 +1,15 @@
+.encabezado{
+	background-color: brown;
+	height: 100px;
+	width: auto;
+
+}
+
+.bton{
+	transition: transform .2s;
+}
+
+.bton:hover {
+  transform: scale(1.25); /* (125% zoom) */
+  background: black;
+}
